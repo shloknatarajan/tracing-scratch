@@ -1,0 +1,103 @@
+2023-11-10T11:05:14.984Z INFO @wdio/local-runner: Run worker command: run
+2023-11-10T11:05:15.076Z DEBUG @wdio/runner: init remote session
+2023-11-10T11:05:15.078Z DEBUG @wdio/utils:initialiseServices: initialise service "chromedriver" as NPM package
+2023-11-10T11:05:15.478Z DEBUG @wdio/utils:initialiseServices: initialise custom service "ExpressServiceLauncher"
+2023-11-10T11:05:17.629Z DEBUG @wdio/runner: init remote session
+2023-11-10T11:05:17.630Z INFO webdriver: Initiate new session using the WebDriver protocol
+2023-11-10T11:05:17.630Z INFO @wdio/utils: Connecting to existing driver at http://localhost:8020/
+2023-11-10T11:05:17.707Z INFO webdriver: [POST] http://localhost:8020/session
+2023-11-10T11:05:17.707Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      'goog:chromeOptions': [Object],
+      'goog:loggingPrefs': [Object]
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    'goog:chromeOptions': { args: [Array] },
+    'goog:loggingPrefs': { browser: 'ALL' }
+  }
+}
+2023-11-10T11:05:18.656Z WARN webdriver: Request failed with status 500 due to session not created: This version of ChromeDriver only supports Chrome version 117
+Current browser version is 119.0.6045.123 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2023-11-10T11:05:18.656Z INFO webdriver: Retrying 1/3
+2023-11-10T11:05:18.656Z INFO webdriver: [POST] http://localhost:8020/session
+2023-11-10T11:05:18.656Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      'goog:chromeOptions': [Object],
+      'goog:loggingPrefs': [Object]
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    'goog:chromeOptions': { args: [Array] },
+    'goog:loggingPrefs': { browser: 'ALL' }
+  }
+}
+2023-11-10T11:05:19.450Z WARN webdriver: Request failed with status 500 due to session not created: This version of ChromeDriver only supports Chrome version 117
+Current browser version is 119.0.6045.123 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2023-11-10T11:05:19.451Z INFO webdriver: Retrying 2/3
+2023-11-10T11:05:19.451Z INFO webdriver: [POST] http://localhost:8020/session
+2023-11-10T11:05:19.451Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      'goog:chromeOptions': [Object],
+      'goog:loggingPrefs': [Object]
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    'goog:chromeOptions': { args: [Array] },
+    'goog:loggingPrefs': { browser: 'ALL' }
+  }
+}
+2023-11-10T11:05:20.273Z WARN webdriver: Request failed with status 500 due to session not created: This version of ChromeDriver only supports Chrome version 117
+Current browser version is 119.0.6045.123 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2023-11-10T11:05:20.273Z INFO webdriver: Retrying 3/3
+2023-11-10T11:05:20.273Z INFO webdriver: [POST] http://localhost:8020/session
+2023-11-10T11:05:20.273Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      'goog:chromeOptions': [Object],
+      'goog:loggingPrefs': [Object]
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    'goog:chromeOptions': { args: [Array] },
+    'goog:loggingPrefs': { browser: 'ALL' }
+  }
+}
+2023-11-10T11:05:21.098Z ERROR webdriver: Request failed with status 500 due to session not created: session not created: This version of ChromeDriver only supports Chrome version 117
+Current browser version is 119.0.6045.123 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2023-11-10T11:05:21.098Z ERROR webdriver: session not created: session not created: This version of ChromeDriver only supports Chrome version 117
+Current browser version is 119.0.6045.123 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+    at getErrorFromResponseBody (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/webdriver/build/utils.js:194:12)
+    at NodeJSRequest._request (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/webdriver/build/request/index.js:164:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async startWebDriverSession (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/webdriver/build/utils.js:63:20)
+    at async Function.newSession (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/webdriver/build/index.js:20:45)
+    at async remote (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/@wdio/runner/node_modules/webdriverio/build/index.js:45:22)
+    at async Runner._startSession (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/@wdio/runner/build/index.js:224:29)
+    at async Runner._initSession (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/@wdio/runner/build/index.js:190:25)
+    at async Runner.run (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/@wdio/runner/build/index.js:79:19)
+2023-11-10T11:05:21.099Z ERROR @wdio/runner: Error: Failed to create session.
+session not created: This version of ChromeDriver only supports Chrome version 117
+Current browser version is 119.0.6045.123 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+    at startWebDriverSession (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/webdriver/build/utils.js:68:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Function.newSession (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/webdriver/build/index.js:20:45)
+    at async remote (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/@wdio/runner/node_modules/webdriverio/build/index.js:45:22)
+    at async Runner._startSession (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/@wdio/runner/build/index.js:224:29)
+    at async Runner._initSession (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/@wdio/runner/build/index.js:190:25)
+    at async Runner.run (file:///Users/shloknatarajan/learning/traces-scratch/node_modules/@wdio/runner/build/index.js:79:19)

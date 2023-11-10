@@ -1,0 +1,22 @@
+2023-11-10T11:05:12.999Z DEBUG @wdio/utils:initialiseServices: initialise service "chromedriver" as NPM package
+2023-11-10T11:05:13.388Z DEBUG @wdio/utils:initialiseServices: initialise custom service "ExpressServiceLauncher"
+2023-11-10T11:05:13.388Z INFO chromedriver: Initiate Chromedriver Launcher (v8.1.1)
+2023-11-10T11:05:13.388Z INFO @wdio/cli:launcher: Run onPrepare hook
+2023-11-10T11:05:13.392Z INFO chromedriver: Start Chromedriver (/Users/shloknatarajan/learning/traces-scratch/node_modules/chromedriver/lib/chromedriver/chromedriver) with args --port=8020 --url-base=/
+2023-11-10T11:05:13.499Z DEBUG @wdio/cli:utils: Finished to run "onPrepare" hook in 111ms
+2023-11-10T11:05:13.500Z INFO @wdio/utils: Setting up browser driver for: chrome@stable
+2023-11-10T11:05:13.500Z INFO @wdio/utils: Setting up browser binaries for: chrome@stable
+2023-11-10T11:05:13.545Z INFO webdriver: Downloading Chromedriver v119.0.6045.123
+2023-11-10T11:05:13.977Z WARN webdriver: Chromedriver v119.0.6045.123 don't exist, trying to find known good version...
+2023-11-10T11:05:14.193Z INFO webdriver: Download of Chromedriver v119.0.6045.105 was successful
+2023-11-10T11:05:14.198Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-11-10T11:05:14.198Z DEBUG @wdio/cli:utils: Finished to run "onWorkerStart" hook in 0ms
+2023-11-10T11:05:14.199Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,/Users/shloknatarajan/learning/traces-scratch/config/wdio.conf.ts
+2023-11-10T11:05:14.203Z DEBUG @wdio/local-runner: Send command run to worker with cid "0-0"
+2023-11-10T11:05:21.226Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 1
+2023-11-10T11:05:21.227Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-11-10T11:05:21.227Z DEBUG @wdio/cli:utils: Finished to run "onWorkerEnd" hook in 0ms
+2023-11-10T11:05:21.227Z INFO @wdio/cli:launcher: Run onComplete hook
+2023-11-10T11:05:21.227Z DEBUG @wdio/cli:utils: Finished to run "onComplete" hook in 0ms
+2023-11-10T11:05:21.250Z INFO @wdio/local-runner: Shutting down spawned worker
+2023-11-10T11:05:21.501Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
