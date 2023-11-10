@@ -6,22 +6,7 @@ const debug = process.env.DEBUG;
 class ExpressServiceLauncher implements Services.ServiceInstance {
     async onPrepare(): Promise<void> {
         const port = 3001;
-        const app = express()
-        app.use(express.static(path.join(__dirname, '../src')));
-        app.get('/', (req, res) => {
-            console.log(req)
-            res.redirect('/home')
-        })
-
-        app.get('/home', (req, res) => {
-            console.log("{traceId:homepage}")
-            res.sendFile(path.join(__dirname, '../src/index.html'));
-        })
-
-        const pageRouter = require('../routes/pages')
-        app.use('/pages', pageRouter)
-
-
+        const app = require('../services/server.js')
         await new Promise<void>((resolve, reject) => {
             app.listen(port, (err) => {
                 if (err) {

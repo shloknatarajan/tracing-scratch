@@ -16,6 +16,8 @@ app.get('/home', (req, res) => {
 const pageRouter = require('../routes/pages')
 app.use('/pages', pageRouter)
 
-app.listen(port, () => {
-    console.log(`Express tutorial app listening at http://localhost:${port}`)
-})
+module.exports = app
+
+// app.listen(port, () => {
+//     console.log(`Express tutorial app listening at http://localhost:${port}`)
+// })

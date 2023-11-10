@@ -15,7 +15,7 @@
   },
   "scripts": {
     "clean": "rm -rf build pageObjects/ node_modules __lwr_cache__ site tsconfig.tsbuildinfo",
-    "start": "node services/server.js",
+    "start": "node services/startServer.js",
     "test": "wdio run ./config/wdio.conf.ts"
   },
   "devDependencies": {
